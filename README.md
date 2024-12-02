@@ -90,7 +90,8 @@ The app directly addresses a growing demand for self-paced technical learning. I
 
 ## Wireframe Images
 
-![image](https://github.com/user-attachments/assets/d0eb7f6a-224d-426c-a985-ddf3f001a53f)
+![KakaoTalk_20241202_183401376](https://github.com/user-attachments/assets/22af5e59-8410-401f-8284-cc2278618e2a)
+
 
 
 ---
