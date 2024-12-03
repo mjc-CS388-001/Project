@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.codetutor.ui.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_challengesListFragment"
+            app:destination="@id/challengesListFragment" />
+    </fragment>
+
+    <!-- Challenges List Fragment -->
+    <fragment
+        android:id="@+id/challengesListFragment"
+        android:name="com.example.codetutor.ui.ChallengesListFragment"
+        android:label="Challenges">
+        <action
+            android:id="@+id/action_challengesListFragment_to_challengeFragment"
+            app:destination="@id/challengeFragment" />
+    </fragment>
+    <!-- Challenge Fragment -->
+    <fragment
+        android:id="@+id/challengeFragment"
+        android:name="com.example.codetutor.ui.ChallengeFragment"
+        android:label="Challenge">
+        <argument
+            android:name="challengeId"
+            app:argType="integer" />
+    </fragment>
+
+    <!-- Settings Fragment -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.codetutor.ui.SettingsFragment"
+        android:label="Settings" />
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.codetutor.ui.ProfileFragment"
+        android:label="Profile" />
+
+    <!-- Leaderboard Fragment -->
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="com.example.codetutor.ui.LeaderboardFragment"
+        android:label="Leaderboard" />
+
+</navigation>
